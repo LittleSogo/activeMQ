@@ -20,9 +20,9 @@ public class Producer {
         MessageProducer messageProducer = null;//消息生产者
 
         try {
-            System.out.println("USERNAME:"+USERNAME);
-            System.out.println("PASSWORD:"+PASSWORD);
-            System.out.println("BROKEURL:"+BROKEURL);
+            System.out.println("username:"+USERNAME);
+            System.out.println("password:"+PASSWORD);
+            System.out.println("url:"+BROKEURL);
             connectionFactory = new ActiveMQConnectionFactory(USERNAME,PASSWORD,BROKEURL);
             connection = connectionFactory.createConnection();
             session = connection.createSession(true, Session.AUTO_ACKNOWLEDGE);
